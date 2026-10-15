@@ -1,0 +1,29 @@
+MEU CONTROLE FINANCEIRO — PWA
+
+ARQUIVOS
+- index.html: aplicativo
+- manifest.json: configuração para instalação
+- sw.js: cache para uso offline após a primeira abertura
+- icon.svg: ícone
+
+COMO USAR
+1. Hospede os arquivos em um endereço HTTPS (por exemplo, GitHub Pages ou outro host estático).
+2. Abra o endereço no Chrome do Android.
+3. No menu do Chrome, escolha “Instalar app” ou “Adicionar à tela inicial”.
+4. Abra pelo ícone. Depois da primeira carga, o app pode abrir offline.
+
+IMPORTANTE SOBRE OS DADOS
+- Os lançamentos ficam no armazenamento local do navegador (localStorage), sem conta ou servidor.
+- Eles não são sincronizados automaticamente com outros dispositivos.
+- Limpar dados do site/navegador pode apagar os lançamentos.
+- Use “Baixar backup JSON” no Dashboard para guardar uma cópia e “Restaurar backup” para recuperá-la.
+- “Exportar CSV” gera uma planilha dos lançamentos do ciclo selecionado.
+
+CICLOS
+- Primeiro ciclo: 15/10/2026 a 10/11/2026.
+- Ciclos seguintes: dia 11 até dia 10 do mês seguinte.
+- Meta de entradas brutas por ciclo: R$ 4.200.
+- “Por dia necessário” divide o que falta para a meta pelos dias restantes do ciclo selecionado.
+
+NOTA
+Um PWA precisa ser servido por HTTPS (ou localhost para desenvolvimento) para instalar e usar o service worker. Abrir o arquivo index.html diretamente como arquivo local não habilita a instalação PWA completa.
